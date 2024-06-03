@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  /* PRIMARY */
+
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradient */
+
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main_con {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  /* width: 700px; */
+  /* height: 600px; */
+  /* margin-top: 150px; */
+  color: var(--White);
+  /* border-radius: 30px; */
+  /* box-shadow: 0 4px 10px 0 hsla(252, 100%, 67%, 0.1),
+    0 6px 20px 0 hsla(252, 100%, 67%, 0.1); */
+
+  /* ======MR DAYO CORRECTION IN CLASS========= */
+  max-width: 700px;
+  margin: 150px 0;
+  border-radius: 30px;
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========MEDIA QUERY============= */
+
+/* media Query from screen 500px to 0px */
+@media (max-width: 500px) {
+  .main_con {
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+  }
+
+ 
+}
+
+
+/* ================== */
+
+.card_1 {
+  /* border: 2px solid yellow; */
+  max-width: 350px;
+  /* height: 600px; */
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  /* padding: 40px 40px 60px 40px; */
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+/* =======MEDIA QUERY============ */
+
+@media (max-width: 500px) {
+  .card_1 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.your {
+  font-size: 20px;
+  font-weight: 500;
+  /* color: rgb(230, 219, 219); */
+}
+
+.circle {
+  /* background-color: red; */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.seven_six {
+  font-size: 70px;
+  font-weight: 800;
+}
+
+.of_100 {
+  /* color: rgb(146, 140, 140); */
+}
+
+.card_1 h2 {
+  /* font-size: 30px; */
+  font-weight: 700;
+  /* margin-bottom: 15px; */
+  margin: 25px;
+}
+
+.you {
+  font-size: 18px;
+  /* padding: 10px; */
+  line-height: 25px;
+
+  /* Mr Dayo correction in class */
+  padding: 0 30px;
+}
+
+/* ========================================================= */
+
+.card_2 {
+  /* border: 2px solid green; */
+  max-width: 350px;
+  padding: 20px;
+  /* padding: 20px 35px; */
+
+  /* height: 600px; */ 
+}
+
+.card_2 h3 {
+  color: var(--Dark-gray-blue);
+  /* font-size: 21px; */
+  /* font-weight: 500; */
+  /* margin-top: 20px; */
+}
+
+.results {
+  margin-top: 18px;
+  /* margin-top: 30px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.react {
+  display: flex;
+  gap: 15px;
+}
+
+.react p {
+  color: var(--Light-red);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p {
+  color: hsla(224, 30%, 27%, 0.2);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+}
+
+/* ==================YELLOW==================== */
+
+.yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.memory {
+  display: flex;
+  gap: 15px;
+}
+
+.memory p {
+  color: var(--Orangey-yellow);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p {
+  color: hsla(224, 30%, 27%, 0.2);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+}
+
+/* ========================GREEN=========================== */
+
+.green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.verbal {
+  display: flex;
+  gap: 15px;
+}
+
+.verbal p {
+  color: var(--Green-teal);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p {
+  color: hsla(224, 30%, 27%, 0.2);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+}
+
+/* =========================BLUE============================= */
+
+.blue {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.visual {
+  display: flex;
+  gap: 15px;
+}
+
+.visual p {
+  color: var(--Cobalt-blue);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p {
+  color: hsla(224, 30%, 27%, 0.2);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+}
+
+/* ====================BUTTON========================== */
+
+/* button {
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  font-size: 18px;
+  border: none;
+  width: 100%;
+  padding: 17px 30px;
+  border-radius: 25px;
+  margin-top: 37px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+} */
+
+.but {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.but button {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 120px;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  cursor: pointer;
+}
+
+.but button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
