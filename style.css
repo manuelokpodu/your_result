@@ -64,10 +64,7 @@ body {
     border-radius: 0;
     margin: 0;
   }
-
- 
 }
-
 
 /* ================== */
 
@@ -112,7 +109,7 @@ body {
   justify-content: center;
   background: linear-gradient(
     to bottom,
-    hsla(256, 72%, 46%, 1),
+    red,
     hsla(241, 72%, 46%, 0)
   );
 }
@@ -150,7 +147,7 @@ body {
   padding: 20px;
   /* padding: 20px 35px; */
 
-  /* height: 600px; */ 
+  /* height: 600px; */
 }
 
 .card_2 h3 {
